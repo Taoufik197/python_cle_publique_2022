@@ -22,8 +22,6 @@ uint8_t hexchr2bin(const char hex)
 	return result;
 }
 
-
-
 void hexStringToBin(uint8_t *out,const char * hexPrivate) {
     for (int i=0; i<32; i++){
 	out[i] = hexchr2bin(hexPrivate[2*i])<<4 | hexchr2bin(hexPrivate[2*i+1]);
@@ -47,11 +45,6 @@ char *binToHexString(char *out,const unsigned char *bin, size_t len)
 
     return out;
 }
-
-
-
-
-
 
 class Cle
 {
@@ -81,7 +74,6 @@ class Cle
 };
  
 namespace py = pybind11;
-
 
 PYBIND11_MODULE(cle_component,greetings)
 {
