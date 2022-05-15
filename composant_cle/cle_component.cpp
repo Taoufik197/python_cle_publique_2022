@@ -1,4 +1,4 @@
-//#include <pybind11/pybind11.h>
+#include <pybind11/pybind11.h>
 #include "micro-ecc/uECC.h"
 char version[]="1.0";
 
